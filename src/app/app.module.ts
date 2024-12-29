@@ -9,6 +9,9 @@ import { ListProviderComponent } from './list-provider/list-provider.component';
 import { UpdateProviderComponent } from './update-provider/update-provider.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     AddProviderComponent,
     ListProviderComponent,
-    UpdateProviderComponent
+    UpdateProviderComponent,
+    LoginComponent,
+    LogoutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

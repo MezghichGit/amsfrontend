@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AuthenticationService } from '../services/authentication.service';
 @Component({
   selector: 'app-navbar',
   standalone: false,
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  constructor(public loginService: AuthenticationService) { }
 }
